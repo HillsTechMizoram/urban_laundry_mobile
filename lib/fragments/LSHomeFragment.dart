@@ -7,7 +7,7 @@ import '../components/LSServiceNearByComponent.dart';
 import '../components/LSTopServiceComponent.dart';
 import '../main.dart';
 import '../screens/LSNearByScreen.dart';
-import '../screens/LSNotificationScreen.dart';
+import '../screens/LSNotificationScreen.dart'; 
 import '../screens/LSOfferAllScreen.dart';
 
 class LSHomeFragment extends StatefulWidget {
