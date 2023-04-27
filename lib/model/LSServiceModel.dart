@@ -35,10 +35,10 @@ class LSServiceModel {
 List<LSServiceModel> getTopServiceList() {
   List<LSServiceModel> list = [];
 
-  list.add(LSServiceModel(title: 'Wash & Fold', img: LSWashingClothes));
-  list.add(LSServiceModel(title: 'Wash & Iren', img: LSSweatshirt));
-  list.add(LSServiceModel(title: 'Dry Clean', img: LSSuit));
-  list.add(LSServiceModel(title: 'premium Wash', img: LSWashingMachine));
+  list.add(LSServiceModel(title: 'Request', img: LSWashingClothes));
+  list.add(LSServiceModel(title: 'Accepted', img: LSSweatshirt));
+  list.add(LSServiceModel(title: 'Inprocess', img: LSSuit));
+  list.add(LSServiceModel(title: 'Finish', img: LSWashingMachine));
 
   return list;
 }

@@ -132,11 +132,11 @@ class LSSignInScreenState extends State<LSSignInScreen> {
           padding: EdgeInsets.all(16),
           child: Column(
             children: [
-              8.height,
+              80.height,
               commonCacheImageWidget(LSLogo, 120, fit: BoxFit.cover).center(),
-              Text('Urban Laundry',
-                  style: boldTextStyle(size: 28, color: LSColorPrimary)),
-              16.height,
+              // Text('Urban Laundry', 
+              //     style: boldTextStyle(size: 28, color: LSColorPrimary)),
+              50.height,
               Container(
                 decoration: boxDecorationRoundedWithShadow(8,
                     backgroundColor: context.cardColor),

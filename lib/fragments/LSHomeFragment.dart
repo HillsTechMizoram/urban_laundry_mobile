@@ -51,7 +51,7 @@ class LSHomeFragmentState extends State<LSHomeFragment> {
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Hello, Jhon', style: boldTextStyle(color: white, size: 20)).paddingOnly(left: 16, right: 16, bottom: 8),
+                Text('Hello, Kima', style: boldTextStyle(color: white, size: 20)).paddingOnly(left: 16, right: 16, bottom: 8),
                 IconButton(
                     onPressed: () {
                       LSNotificationScreen().launch(context);
@@ -73,16 +73,16 @@ class LSHomeFragmentState extends State<LSHomeFragment> {
                             WidgetSpan(
                               child: Icon(Icons.location_on, color: white, size: 16).paddingRight(4),
                             ),
-                            TextSpan(text: 'San Francisco', style: primaryTextStyle(color: white)),
+                            TextSpan(text: 'Aizawl, MZ', style: primaryTextStyle(color: white)),
                           ],
                         ),
                       ),
                       RichText(
                         text: TextSpan(
                           children: [
-                            WidgetSpan(
-                              child: Icon(Icons.airplanemode_on_outlined, color: white, size: 16).paddingRight(4),
-                            ),
+                            // WidgetSpan(
+                            //   child: Icon(Icons.airplanemode_on_outlined, color: white, size: 16).paddingRight(4),
+                            // ),
                             TextSpan(text: 'Change', style: primaryTextStyle(color: white)),
                           ],
                         ),
@@ -118,12 +118,12 @@ class LSHomeFragmentState extends State<LSHomeFragment> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               8.height,
-              Text('Top Services', style: boldTextStyle(size: 18)).paddingOnly(left: 16, top: 16, right: 16, bottom: 8),
+              Text('Laundry Status', style: boldTextStyle(size: 18)).paddingOnly(left: 16, top: 16, right: 16, bottom: 8),
               LSTopServiceComponent(),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text('Popular Laundry Nearby', style: boldTextStyle(size: 18)).expand(),
+                  Text('Laundry Price', style: boldTextStyle(size: 18)).expand(),
                   TextButton(
                       onPressed: () {
                         LSNearByScreen().launch(context);
