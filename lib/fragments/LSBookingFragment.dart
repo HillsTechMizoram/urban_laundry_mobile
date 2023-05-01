@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:urban_laundry_mobile/components/PurchaseMoreScreen.dart';
 import 'package:nb_utils/nb_utils.dart';
+import 'package:urban_laundry_mobile/fragments/LSRequestLaundry.dart';
 
 import '../components/LSBookingComponents.dart';
 import '../main.dart';
@@ -43,9 +44,14 @@ class LSBookingFragmentState extends State<LSBookingFragment> {
           color: context.cardColor,
           actions: [
             IconButton(
-              icon: Icon(Icons.search, color: context.iconColor),
+              icon: Icon(Icons.add, color: context.iconColor),
               onPressed: () {
-                //
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LSRequestScreen(),
+                  ),
+                );
               },
             )
           ],

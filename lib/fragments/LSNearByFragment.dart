@@ -59,16 +59,16 @@ class LSNearByFragmentState extends State<LSNearByFragment> {
                       WidgetSpan(
                         child: Icon(Icons.location_on, color: LSColorPrimary, size: 16).paddingRight(4),
                       ),
-                      TextSpan(text: 'San Francisco', style: primaryTextStyle()),
+                      TextSpan(text: 'Aizawl, MZ', style: primaryTextStyle()),
                     ],
                   ),
                 ),
                 RichText(
                   text: TextSpan(
                     children: [
-                      WidgetSpan(
-                        child: Icon(Icons.airplanemode_on, color: LSColorPrimary, size: 16).paddingRight(4),
-                      ),
+                      // WidgetSpan(
+                      //   child: Icon(Icons.airplanemode_on, color: LSColorPrimary, size: 16).paddingRight(4),
+                      // ),
                       TextSpan(text: 'Change', style: primaryTextStyle(color: LSColorPrimary)),
                     ],
                   ),

@@ -40,7 +40,10 @@ dependencies:
   intl:
   flutter_vector_icons: 
   google_fonts: 
-  connectivity_plus_web: 
+  connectivity_plus_web:
+  flutter_session_manager:  
+  flutter_secure_storage: 
+  shared_preferences: 
 
   # Common
   share: 

@@ -37,14 +37,18 @@ class LSTopServiceComponentState extends State<LSTopServiceComponent> {
 
         return Column(
           children: [
-            Container(
-              height: 80,
-              width: 80,
+            Align(
+              alignment: Alignment.center,
+              child: Container(
+              height: 72,
+              width: 72,
               alignment: Alignment.center,
               margin: EdgeInsets.all(8),
               decoration: boxDecorationRoundedWithShadow(40, backgroundColor: context.cardColor),
-              child: commonCacheImageWidget(data.img.validate(), 50, width: 50, fit: BoxFit.cover),
+              child: commonCacheImageWidget(data.img.validate(), 40, width: 40, fit: BoxFit.cover),
+            )
             ),
+            
             8.height,
             Text(data.title.validate(), style: primaryTextStyle()),
           ],

@@ -35,9 +35,9 @@ class LSServiceModel {
 List<LSServiceModel> getTopServiceList() {
   List<LSServiceModel> list = [];
 
-  list.add(LSServiceModel(title: 'Request', img: LSWashingClothes));
-  list.add(LSServiceModel(title: 'Accepted', img: LSSweatshirt));
-  list.add(LSServiceModel(title: 'Inprocess', img: LSSuit));
+  list.add(LSServiceModel(title: 'Request', img: LSWashingMachine));
+  list.add(LSServiceModel(title: 'Accepted', img: LSWashingMachine));
+  list.add(LSServiceModel(title: 'Inprocess', img: LSWashingMachine));
   list.add(LSServiceModel(title: 'Finish', img: LSWashingMachine));
 
   return list;
@@ -46,14 +46,14 @@ List<LSServiceModel> getTopServiceList() {
 List<LSServiceModel> getNearByServiceList() {
   List<LSServiceModel> list = [];
 
-  list.add(LSServiceModel(title: 'Dhobee Laundry', rating: '5', location: '1810,Camino Real ,New-york', img: LSList1));
-  list.add(LSServiceModel(title: 'My Laundry', rating: '4.5', location: '1810,Camino Real ,New-york', img: LSList2));
-  list.add(LSServiceModel(title: 'Quick Laundry', rating: '2', location: '1810,Camino Real ,New-york', img: LSList3));
-  list.add(LSServiceModel(title: 'Your Laundry', rating: '3', location: '1810,Camino Real ,New-york', img: LSList4));
-  list.add(LSServiceModel(title: 'Dhobee Laundry', rating: '5', location: '1810,Camino Real ,New-york', img: LSList1));
-  list.add(LSServiceModel(title: 'My Laundry', rating: '4.5', location: '1810,Camino Real ,New-york', img: LSList2));
-  list.add(LSServiceModel(title: 'Quick Laundry', rating: '2', location: '1810,Camino Real ,New-york', img: LSList3));
-  list.add(LSServiceModel(title: 'Your Laundry', rating: '3', location: '1810,Camino Real ,New-york', img: LSList4));
+  list.add(LSServiceModel(title: 'Wet Cleaning', rating: '5', location: '1810,Camino Real ,New-york', img: LSList1));
+  list.add(LSServiceModel(title: 'Dry Cleaning', rating: '4.5', location: '1810,Camino Real ,New-york', img: LSList2));
+  list.add(LSServiceModel(title: 'Sofa Dry Clean', rating: '2', location: '1810,Camino Real ,New-york', img: LSList3));
+  list.add(LSServiceModel(title: 'Ironing', rating: '3', location: '1810,Camino Real ,New-york', img: LSList4));
+  list.add(LSServiceModel(title: 'B2B Laundry', rating: '5', location: '1810,Camino Real ,New-york', img: LSList1));
+  list.add(LSServiceModel(title: 'Wedding Gound Cleaning', rating: '4.5', location: '1810,Camino Real ,New-york', img: LSList2));
+  list.add(LSServiceModel(title: 'Hostel Laundry', rating: '2', location: '1810,Camino Real ,New-york', img: LSList3));
+  list.add(LSServiceModel(title: 'Blazers Dry Cleaning', rating: '3', location: '1810,Camino Real ,New-york', img: LSList4));
   return list;
 }
 

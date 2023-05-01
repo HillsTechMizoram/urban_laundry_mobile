@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:flutter_session_manager/flutter_session_manager.dart';
 import 'package:urban_laundry_mobile/main.dart';
 import 'package:urban_laundry_mobile/screens/LSForgotPasswordScreen.dart';
 import 'package:urban_laundry_mobile/screens/LSOnBoardingScreen.dart';
@@ -62,11 +64,18 @@ class LSSignInScreenState extends State<LSSignInScreen> {
   Future login() async {
     var url = "http://192.168.1.12/urban_laundry/user/api/user_signin.php";
     var response = await http.post(Uri.parse(url), body: {
+      "username": fullName.text,
       "email": emailCont.text,
       "password": passCont.text,
     });
+
     var data = json.decode(response.body);
     if (data == "Success") {
+      //await SessionManager().set('token', emailCont.text);
+      await SessionManager().set('token', fullName.text);
+      await SessionManager().get('userid');
+      //FlutterSecureStorage().write(key: 'user_id', value: response.body);
+
       Fluttertoast.showToast(
           msg: "Login Successful",
           toastLength: Toast.LENGTH_SHORT,
@@ -134,7 +143,7 @@ class LSSignInScreenState extends State<LSSignInScreen> {
             children: [
               80.height,
               commonCacheImageWidget(LSLogo, 120, fit: BoxFit.cover).center(),
-              // Text('Urban Laundry', 
+              // Text('Urban Laundry',
               //     style: boldTextStyle(size: 28, color: LSColorPrimary)),
               50.height,
               Container(
@@ -195,8 +204,8 @@ class LSSignInScreenState extends State<LSSignInScreen> {
                       controller: fullName,
                       textFieldType: TextFieldType.EMAIL,
                       decoration: InputDecoration(hintText: 'Fullname'),
-                    ).visible(isSignUp),
-                    16.height.visible(isSignUp),
+                    ),
+                    16.height,
                     AppTextField(
                       controller: mobNo,
                       textFieldType: TextFieldType.EMAIL,

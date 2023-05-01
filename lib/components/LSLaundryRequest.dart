@@ -8,14 +8,14 @@ import '../screens/LSOrderDetailScreen.dart';
 import '../utils/LSImages.dart';
 import '../utils/LSWidgets.dart';
 
-class LSBookingComponents extends StatefulWidget {
-  static String tag = '/LSBookingComponents';
+class LSLaundryBookingReq extends StatefulWidget {
+  static String tag = '/LSLaundryBookingReq';
 
   @override
-  LSBookingComponentsState createState() => LSBookingComponentsState();
+  LSLaundryBookingReqState createState() => LSLaundryBookingReqState();
 }
 
-class LSBookingComponentsState extends State<LSBookingComponents> {
+class LSLaundryBookingReqState extends State<LSLaundryBookingReq> {
   @override
   void initState() {
     super.initState();

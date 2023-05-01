@@ -30,20 +30,12 @@ class PurchaseMoreScreen extends StatelessWidget {
                   ),
                   22.height,
                   Text(
-                    'This is the lite version of the $appName App',
+                    'This features is not available in this version',
                     style: boldTextStyle(size: 22),
                     textAlign: TextAlign.center,
                   ),
                   16.height,
-                  AppButton(
-                    text: 'Purchase for more screen',
-                    color: context.primaryColor,
-                    textStyle: boldTextStyle(color: Colors.white),
-                    shapeBorder: RoundedRectangleBorder(borderRadius: radius(10)),
-                    onTap: () {
-                      launchUrl(Uri.parse('https://codecanyon.net/item/prokit-flutter-app-ui-design-templete-kit/25787190?s_rank=19'));
-                    },
-                  )
+                 
                 ],
               ),
             ).paddingAll(16),
